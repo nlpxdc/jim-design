@@ -33,6 +33,7 @@
 | type  | Integer  | 非空  | 类型（0保留，1单聊，2群聊）  |
 | name  | String  |   | 上次消息Id  |
 | createTime  | Long  | 非空，Sort索引  | 创建时间  |
+| lastMessageId  | String  | 非空  | 最后一条消息Id  |
 
 # User
 | 字段  | 类型  | 约束  |  说明 |
