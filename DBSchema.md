@@ -20,7 +20,7 @@
 | conversationId  | String  | 主键  | 对话Id（CVSsUUID）  |
 | type  | Integer  | 非空  | 类型（0保留，1单聊，2群聊）  |
 | name  | String  |   | 上次消息Id  |
-| createTime  | Long  | 非空，Sort索引  | 创建时间  |
+| createTime  | Long  | 非空  | 创建时间  |
 | lastMessageId  | String  | 非空  | 最后一条消息Id  |
 | holdUserId  | String  | 非空  | 持有者用户Id  |
 
@@ -42,7 +42,7 @@
 | userConversationId  | String  | 主键  | 用户对话Id（UCsUUID）  |
 | userId  | String  | 非空，Hash索引  | 用户Id  |
 | conversationId  | String  | 非空，Hash索引  | 对话Id  |
-| joinTime  | Long  | 非空，Sort索引  | 加入时间  |
+| joinTime  | Long  | 非空  | 加入时间  |
 | muteEnabled  | Boolean  |   | 静音  |
 
 # UxUy
@@ -52,6 +52,6 @@
 | uxId  | String  | 非空，Hash索引  | uxId  |
 | uyId  | String  | 非空，Hash索引  | uyId  |
 | beFriend  | Boolean  |   | 朋友  |
-| beFriendTime  | Long  | 非空  | 成朋友时间  |
+| beFriendTime  | Long  |   | 成朋友时间  |
 | remarkName  | String  |   | 备注名  |
-| showName  | String  | 非空  | 显示名  |
+| showName  | String  |   | 显示名  |
