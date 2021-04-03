@@ -13,8 +13,7 @@ RequestBody:
 ```json
 {
     "username": "cjf001",
-    "nickname": "杰飞",
-    "password": "123456",
+    "password": "123456"
 }
 ```
 
@@ -33,7 +32,6 @@ Request Field
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
 |  username  | String   | 用户名    |
-|  nickname  | String   | 昵称    |
 |  password  | String   | 密码    |
 
 Response Field  
