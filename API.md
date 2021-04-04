@@ -1,13 +1,17 @@
 # Index
 
-* [1.1 User Register By Username](##-1.1-User-Register-By-Username)
-* [1.2 User Login By Username](##-1.2-User-Login-By-Username)
+## I
+* [1.1 UserLogin Register By Username](##-1.1-UserLogin-Register-By-Username)
+* [1.2 UserLogin Login By Username](##-1.2-UserLogin-Login-By-Username)
+
+## II
+
 
 # Content
 
-## 1.1 User Register By Username
+## 1.1 UserLogin Register By Username
 
-URL: /user/registerByUsername  
+URL: /userLogin/registerByUsername  
 
 RequestBody:  
 ```json
@@ -43,9 +47,9 @@ Response Field
 |  accessToken  | String   | Access Token    |
 |  accessExpireTime  | Long   | Access Token 过期时间    |
 
-## 1.2 User Login By Username
+## 1.2 UserLogin Login By Username
 
-URL: /user/loginByUsername  
+URL: /userLogin/loginByUsername  
 
 RequestBody:  
 ```json
