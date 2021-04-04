@@ -7,6 +7,8 @@
 ## II
 * [1.1 UserBase Get Profile](##-1.1-UserBase-Get-Profile)
 * [1.2 UserBase Update Profile](##-1.2-UserBase-Update-Profile)
+* [1.3 UserBase Get Basic Info](##-1.3-UserBase-Get-Basic-Info)
+* [1.4 UserBase Batch Get Basic Info](##-1.4-UserBase-Batch-Get-Basic-Info)
 
 # Content
 
@@ -134,6 +136,98 @@ Request Field
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
+|  nickname  |  String  |  昵称   |
+|  avatar  |  String  |  头像   |
+|  birthday  |  Long  |  生日   |
+|  gender  |  Integer  |  性别（0保密，1男，2女）   |
+|  area  |  String  |  地区   |
+
+## 1.3 UserBase Get Basic Info
+
+URL: /userBase/getBasicInfo  
+
+RequestBody:  
+```json
+{
+    "userId": "Uuuid"
+}
+```
+
+ResponseBody:  
+```json
+{
+    "userId": "Uuuid",
+    "username": "cjf001",
+    "nickname": "杰飞",
+    "avatar": "http://xxx.jpg",
+    "birthday": 1601234567890,
+    "gender": 2,
+    "area": "上海"
+}
+```
+
+Request Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  userId  |  String  |  用户Id   |
+|  username  |  String  |  用户名   |
+|  nickname  |  String  |  昵称   |
+|  avatar  |  String  |  头像   |
+|  birthday  |  Long  |  生日   |
+|  gender  |  Integer  |  性别（0保密，1男，2女）   |
+|  area  |  String  |  地区   |
+
+## 1.4 UserBase Batch Get Basic Info
+
+URL: /userBase/batchGetBasicInfo  
+
+RequestBody:  
+```json
+{
+    "userIds": [
+        "Uuuid1",
+        "Uuuid2"
+    ]
+}
+```
+
+ResponseBody:  
+```json
+[
+    {
+        "userId": "Uuuid1",
+        "username": "cjf001",
+        "nickname": "杰飞",
+        "avatar": "http://xxx.jpg",
+        "birthday": 1601234567890,
+        "gender": 2,
+        "area": "上海"
+    },
+    {
+        "userId": "Uuuid2",
+        "username": "cjf002",
+        "nickname": "杰飞",
+        "avatar": "http://xxx.jpg",
+        "birthday": 1601234567890,
+        "gender": 2,
+        "area": "上海"
+    }
+]
+```
+
+Request Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  userIds  |  List(String)  |  用户Id列表   |
+
+Response Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  userId  |  String  |  用户Id   |
+|  username  |  String  |  用户名   |
 |  nickname  |  String  |  昵称   |
 |  avatar  |  String  |  头像   |
 |  birthday  |  Long  |  生日   |
