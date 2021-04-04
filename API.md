@@ -119,7 +119,7 @@ Response Field
 
 URL: /userBase/updateProfile  
 
-ResponseBody:  
+RequestBody:  
 ```json
 {
     "nickname": "杰飞",
@@ -130,7 +130,7 @@ ResponseBody:
 }
 ```
 
-Response Field  
+Request Field  
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
