@@ -1,15 +1,16 @@
 # Index
 
 ## I
-* [1.1 UserLogin Register By Username](##-1.1-UserLogin-Register-By-Username)
-* [1.2 UserLogin Login By Username](##-1.2-UserLogin-Login-By-Username)
+* [0.1 UserLogin Register By Username](##-0.1-UserLogin-Register-By-Username)
+* [0.2 UserLogin Login By Username](##-0.2-UserLogin-Login-By-Username)
 
 ## II
-
+* [1.1 UserBase Get Profile](##-1.1-UserBase-Get-Profile)
+* [1.2 UserBase Update Profile](##-1.2-UserBase-Update-Profile)
 
 # Content
 
-## 1.1 UserLogin Register By Username
+## 0.1 UserLogin Register By Username
 
 URL: /userLogin/registerByUsername  
 
@@ -47,7 +48,7 @@ Response Field
 |  accessToken  | String   | Access Token    |
 |  accessExpireTime  | Long   | Access Token 过期时间    |
 
-## 1.2 UserLogin Login By Username
+## 0.2 UserLogin Login By Username
 
 URL: /userLogin/loginByUsername  
 
@@ -84,3 +85,57 @@ Response Field
 |  tokenIssueTime  | Long   | token签发时间    |
 |  accessToken  | String   | Access Token    |
 |  accessExpireTime  | Long   | Access Token 过期时间    |
+
+## 1.1 UserBase Get Profile
+
+URL: /userBase/getProfile  
+
+ResponseBody:  
+```json
+{
+    "userId": "Uuuid",
+    "username": "cjf001",
+    "nickname": "杰飞",
+    "avatar": "http://xxx.jpg",
+    "birthday": 1601234567890,
+    "gender": 2,
+    "area": "上海"
+}
+```
+
+Response Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  userId  | String   | 用户Id    |
+|  username  |  String  |  用户名   |
+|  nickname  |  String  |  昵称   |
+|  avatar  |  String  |  头像   |
+|  birthday  |  Long  |  生日   |
+|  gender  |  Integer  |  性别（0保密，1男，2女）   |
+|  area  |  String  |  地区   |
+
+## 1.2 UserBase Update Profile
+
+URL: /userBase/updateProfile  
+
+ResponseBody:  
+```json
+{
+    "nickname": "杰飞",
+    "avatar": "http://xxx.jpg",
+    "birthday": 1601234567890,
+    "gender": 2,
+    "area": "上海"
+}
+```
+
+Response Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  nickname  |  String  |  昵称   |
+|  avatar  |  String  |  头像   |
+|  birthday  |  Long  |  生日   |
+|  gender  |  Integer  |  性别（0保密，1男，2女）   |
+|  area  |  String  |  地区   |
