@@ -39,7 +39,7 @@
 # UserConversation
 | 字段  | 类型  | 约束  |  说明 |
 |---|---|---|---|
-| userConversationId  | String  | 主键  | 用户对话Id（UuuidXCuuid）  |
+| userConversationId  | String  | 主键  | 用户对话Id（UuuidvCuuid）  |
 | userId  | String  | 非空，Hash索引  | 用户Id  |
 | conversationId  | String  | 非空，Hash索引  | 对话Id  |
 | joinTime  | Long  | 非空  | 加入时间  |
@@ -48,7 +48,7 @@
 # UxUy
 | 字段  | 类型  | 约束  |  说明 |
 |---|---|---|---|
-| uxuyId  | String  | 主键  | uxuyId（UxidXUyid）  |
+| uxyId  | String  | 主键  | uxuyId（UxIdvUyId）  |
 | uxId  | String  | 非空，Hash索引  | uxId  |
 | uyId  | String  | 非空，Hash索引  | uyId  |
 | beFriend  | Boolean  |   | 朋友  |
