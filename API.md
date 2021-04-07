@@ -7,8 +7,9 @@
 ## II
 * [1.1 UserBase Get Profile](##-1.1-UserBase-Get-Profile)
 * [1.2 UserBase Update Profile](##-1.2-UserBase-Update-Profile)
-* [1.3 UserBase Get Basic Info](##-1.3-UserBase-Get-Basic-Info)
-* [1.4 UserBase Batch Get Basic Info](##-1.4-UserBase-Batch-Get-Basic-Info)
+* [1.3 UserBase Get Basic Info](##-1.3-UserBase-Load)
+* [1.4 UserBase Batch Get Basic Info](##-1.4-UserBase-Batch-Load)
+* [1.5 UserBase Get By Username](##-1.5-UserBase-Get-By-Username)
 
 # Content
 
@@ -142,9 +143,9 @@ Request Field
 |  gender  |  Integer  |  性别（0保密，1男，2女）   |
 |  area  |  String  |  地区   |
 
-## 1.3 UserBase Get Basic Info
+## 1.3 UserBase Load
 
-URL: /userBase/getBasicInfo  
+URL: /userBase/load  
 
 RequestBody:  
 ```json
@@ -178,9 +179,9 @@ Request Field
 |  gender  |  Integer  |  性别（0保密，1男，2女）   |
 |  area  |  String  |  地区   |
 
-## 1.4 UserBase Batch Get Basic Info
+## 1.4 UserBase Batch Load
 
-URL: /userBase/batchGetBasicInfo  
+URL: /userBase/batchLoad  
 
 RequestBody:  
 ```json
@@ -223,6 +224,42 @@ Request Field
 |  userIds  |  List(String)  |  用户Id列表   |
 
 Response Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  userId  |  String  |  用户Id   |
+|  username  |  String  |  用户名   |
+|  nickname  |  String  |  昵称   |
+|  avatar  |  String  |  头像   |
+|  birthday  |  Long  |  生日   |
+|  gender  |  Integer  |  性别（0保密，1男，2女）   |
+|  area  |  String  |  地区   |
+
+## 1.5 UserBase Get By Username
+
+URL: /userBase/getByUsername  
+
+RequestBody:  
+```json
+{
+    "username": "cjf001"
+}
+```
+
+ResponseBody:  
+```json
+{
+    "userId": "Uuuid",
+    "username": "cjf001",
+    "nickname": "杰飞",
+    "avatar": "http://xxx.jpg",
+    "birthday": 1601234567890,
+    "gender": 2,
+    "area": "上海"
+}
+```
+
+Request Field  
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
