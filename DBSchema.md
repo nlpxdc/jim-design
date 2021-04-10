@@ -51,6 +51,8 @@
 | uxyId  | String  | 主键  | uxyId（UxIdVUyId）  |
 | uxId  | String  | 非空，Hash索引  | uxId  |
 | uyId  | String  | 非空，Hash索引  | uyId  |
+| applyFriend  | Boolean  |   | 申请好友  |
+| applyFriendTime  | Long  |   | 申请好友时间  |
 | beFriend  | Boolean  |   | 朋友  |
 | beFriendTime  | Long  |   | 成朋友时间  |
 | remarkName  | String  |   | 备注名  |
