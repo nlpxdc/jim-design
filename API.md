@@ -181,6 +181,7 @@ RequestBody:
 ```json
 {
     "userIds": [
+        "uuid",
         "uuid"
     ]
 }
