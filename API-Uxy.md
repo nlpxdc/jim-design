@@ -3,7 +3,7 @@
 * [1.1 Uxy Load As Ux By Uy](##-1.1-Uxy-Load-As-Ux-By-Uy)
 * [1.2 Uxy Load As Uy By Ux](##-1.2-Uxy-Load-As-Uy-By-Ux)
 * [2.1 Uxy Apply Friend](##-2.1-Uxy-Apply-Friend)
-* [2.2 Uxy Batch Get Apply Friend](##-2.2-Uxy-Batch-Get-Apply-Friend)
+* [2.2 Uxy Batch Get Apply Friend As Uxy](##-2.2-Uxy-Batch-Get-Apply-Friend-As-Uxy)
 
 # Content
 
