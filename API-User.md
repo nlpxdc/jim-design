@@ -127,6 +127,11 @@ RequestBody:
 }
 ```
 
+RequestBody:  
+```json
+{}
+```
+
 Request Field  
 
 | 字段     |     类型 |   描述   | 
@@ -136,6 +141,12 @@ Request Field
 |  birthday  |  Long  |  生日   |
 |  gender  |  Integer  |  性别（0保密，1男，2女）   |
 |  area  |  String  |  地区   |
+
+Response Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|    |    |     |
 
 ## 1.3 UserBase Load
 
