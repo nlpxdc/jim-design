@@ -118,9 +118,9 @@ Request Field
 | :--------------: | :--------:| :------: |
 |  uyId  |  String  |  uyId   |
 
-## 2.2 Uxy Batch Get Apply Friend
+## 2.2 Uxy Batch Get Apply Friend As Uxy
 
-URL: /uxy/batchGetApplyFriend  
+URL: /uxy/batchGetApplyFriendAsUxy  
 
 ResponseBody:  
 ```json
