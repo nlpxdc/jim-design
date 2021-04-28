@@ -53,7 +53,7 @@ RequestBody:
 ```json
 {
     "username": "cjf001",
-    "password": "123456"
+    "loginPassword": "123456"
 }
 ```
 
@@ -72,7 +72,7 @@ Request Field
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
 | username   | String   | 用户名    |
-| password   | String   | 密码  |
+| loginPassword   | String   | 密码  |
 
 Response Field  
 
