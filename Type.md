@@ -13,7 +13,7 @@
 
 | 字段  | 类型  | 约束  |  说明 |
 |---|---|---|---|
-| mediaType  | Integer  | 非空  | 内容类型（0保留，1文本、2图片、3音频、4视频）  |
+| mediaType  | Integer  | 非空  | 媒体类型（0保留，1文本、2图片、3音频、4视频）  |
 | text  | String  |   | 文本  |
 | thumbUrl  | String  |   | 缩略图Url  |
 | originUrl  | String  |   | 原文件Url  |
