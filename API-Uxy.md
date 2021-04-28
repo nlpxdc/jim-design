@@ -1,15 +1,15 @@
 # Index
 
-* [1.1 Uxy Load My](##-1.1-Uxy-Load-My)
-* [1.2 Uxy Batch Load My](##-1.2-Uxy-Batch-Load-My)
+* [1.1 Uxy Load](##-1.1-Uxy-Load)
+* [1.2 Uxy Batch Load](##-1.2-Uxy-Batch-Load)
 * [2.1 Uxy Update](##-2.1-Uxy-Update)
-* [2.2 Uxy Batch Get My](##-2.2-Uxy-Batch-Get-My)
+* [2.2 Uxy Batch Get](##-2.2-Uxy-Batch-Get)
 
 # Content
 
-## 1.1 Uxy Load My
+## 1.1 Uxy Load
 
-URL: /uxy/loadMy  
+URL: /uxy/load  
 
 RequestBody:  
 ```json
@@ -53,9 +53,9 @@ Response Field
 |  remarkName  |  String  |  备注名   |
 |  showName  |  String  |  显示名   |
 
-## 1.2 Uxy Batch Load My
+## 1.2 Uxy Batch Load
 
-URL: /uxy/batchLoadMy  
+URL: /uxy/batchLoad  
 
 RequestBody:  
 ```json
@@ -120,9 +120,9 @@ Response Field
 | :--------------: | :--------:| :------: |
 |    |    |     |
 
-## 2.2 Uxy Batch Get My
+## 2.2 Uxy Batch Get
 
-URL: /uxy/batchGetMy  
+URL: /uxy/batchGet  
 
 RequestBody:  
 ```json
