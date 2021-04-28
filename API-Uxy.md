@@ -14,7 +14,8 @@ URL: /uxy/load
 RequestBody:  
 ```json
 {
-    "uxyId": "uxidVuyid"
+    "uxId": "uxid",
+    "uyId": "uyid"
 }
 ```
 
@@ -84,14 +85,14 @@ Response Field
 | :--------------: | :--------:| :------: |
 |    |    |     |
 
-## 2.1 Uxy Update
+## 2.1 Uxy Save
 
-URL: /uxy/update  
+URL: /uxy/save  
 
 RequestBody:  
 ```json
 {
-    "uxyId": "uxidVuyid",
+    "uyId": "asdf", 
     "applyFriend": true,
     "beFriend": true,
     "remarkName": "asdf",
