@@ -98,7 +98,7 @@ URL: /uxy/save
 RequestBody:  
 ```json
 {
-    "uyId": "asdf", 
+    "uyId": "uuid", 
     "applyFriend": true,
     "beFriend": true,
     "remarkName": "asdf",
@@ -115,7 +115,7 @@ Request Field
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
-|  uxyId  |  String  |  uxyId   |
+|  uyId  |  String  |  uyId   |
 |  applyFriend  |  Boolean  |  申请好友   |
 |  beFriend  |  Boolean  |  成为好友   |
 |  remarkName  |  String  |  备注名   |
