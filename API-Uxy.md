@@ -38,7 +38,8 @@ Request Field
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
-|  uxyId  |  String  |  uxyId   |
+|  uxId  |  String  |  uxId   |
+|  uyId  |  String  |  uyId   |
 
 Response Field  
 
@@ -64,6 +65,10 @@ RequestBody:
     {
         "uxId": "uuid",
         "uyId": "uuid"
+    },
+    {
+        "uxId": "uuid",
+        "uyId": "uuid"
     }
 ]
 ```
@@ -77,7 +82,8 @@ Request Field
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
-|  uxyIds  |  List(Uxy)  |  uxyId列表   |
+|  uxId  |  String  |  uxId   |
+|  uyId  |  String  |  uyId   |
 
 Response Field  
 
