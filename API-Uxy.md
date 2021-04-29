@@ -133,12 +133,7 @@ URL: /uxy/batchGet
 
 RequestBody:  
 ```json
-{
-    "asUx": true,
-    "asUy": true, 
-    "applyFriend": true,
-    "beFriend": true
-}
+{}
 ```
 
 ResponseBody:  
@@ -150,10 +145,7 @@ Request Field
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
-|  asUx  |  Boolean  |  作为Ux   |
-|  asUy  |  Boolean  |  作为Uy   |
-|  applyFriend  |  Boolean  |  申请好友   |
-|  beFriend  |  Boolean  |  成为好友   |
+|    |    |     |
 
 Response Field  
 
