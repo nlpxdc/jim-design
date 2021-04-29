@@ -14,8 +14,8 @@ URL: /uxy/load
 RequestBody:  
 ```json
 {
-    "uxId": "uxid",
-    "uyId": "uyid"
+    "uxId": "uuid",
+    "uyId": "uuid"
 }
 ```
 
@@ -60,14 +60,12 @@ URL: /uxy/batchLoad
 
 RequestBody:  
 ```json
-{
-    "uxyIds": [
-        {
-            "uxId": "uuid",
-            "uyId": "uuid"
-        }
-    ]
-}
+[
+    {
+        "uxId": "uuid",
+        "uyId": "uuid"
+    }
+]
 ```
 
 ResponseBody:  

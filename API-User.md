@@ -190,12 +190,14 @@ URL: /userBase/batchLoad
 
 RequestBody:  
 ```json
-{
-    "userIds": [
-        "uuid",
-        "uuid"
-    ]
-}
+[
+    {
+        "userId": "uuid"
+    },
+    {
+        "userId": "uuid"
+    }
+]
 ```
 
 ResponseBody:  
