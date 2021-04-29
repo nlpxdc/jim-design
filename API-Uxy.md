@@ -62,8 +62,10 @@ RequestBody:
 ```json
 {
     "uxyIds": [
-        "uxidVuyid",
-        "uyidVuxid"
+        {
+            "uxId": "uuid",
+            "uyId": "uuid"
+        }
     ]
 }
 ```
@@ -77,7 +79,7 @@ Request Field
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
-|  uxyIds  |  List(String)  |  uxyId列表   |
+|  uxyIds  |  List(Uxy)  |  uxyId列表   |
 
 Response Field  
 
