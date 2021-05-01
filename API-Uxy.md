@@ -1,21 +1,67 @@
 # Index
 
-* [1.1 Uxy Load](##-1.1-Uxy-Load)
-* [1.2 Uxy Batch Load](##-1.2-Uxy-Batch-Load)
-* [2.1 Uxy Update](##-2.1-Uxy-Update)
-* [2.2 Uxy Batch Get](##-2.2-Uxy-Batch-Get)
+* [1.1.1 Uxy Load As Ux By Uy](##-1.1.1-Uxy-Load-As-Ux-By-Uy)
+* [1.1.2 Uxy Load As Uy By Ux](##-1.1.2-Uxy-Load-As-Uy-By-Ux)
+* [1.1.3 Uxy Load As Uxy](##-1.1.3-Uxy-Load-As-Uxy)
+* [2.1 Uxy Apply Friend](##-2.1-Uxy-Apply-Friend)
+* [2.2 Uxy Batch Get New Friend](##-2.2-Uxy-Batch-Get-New-Friend)
 
 # Content
 
-## 1.1 Uxy Load
+## 1.1.1 Uxy Load As Ux By Uy
 
-URL: /uxy/load  
+URL: /uxy/loadAsUxByUy  
 
 RequestBody:  
 ```json
 {
-    "uxId": "uuid",
-    "uyId": "uuid"
+    "uyId": "uyid"
+}
+```
+
+ResponseBody:  
+```json
+{
+    "uxyId": "uxidVuyid",
+    "uxId": "uxid",
+    "uyId": "uyid",
+    "applyFriend": true,
+    "applyFriendTime": 1601234567890,
+    "beFriend": true,
+    "beFriendTime": 1601234567890,
+    "remarkName": "jiefei",
+    "showName": "jf"
+}
+```
+
+Request Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  uyId  |  String  |  uyId   |
+
+Response Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  uxyId  |  String  |  uxyId   |
+|  uxId  |  String  |  uxId   |
+|  uyId  |  String  |  uyId   |
+|  applyFriend  |  Boolean  |  申请好友   |
+|  applyFriendTime  |  Long  |  申请好友时间   |
+|  beFriend  |  Boolean  |  成为好友   |
+|  beFriendTime  |  Long  |  成为好友时间   |
+|  remarkName  |  String  |  备注名   |
+|  showName  |  String  |  显示名   |
+
+## 1.1.2 Uxy Load As Uy By Ux
+
+URL: /uxy/loadAsUyByUx  
+
+RequestBody:  
+```json
+{
+    "uxId": "uxid"
 }
 ```
 
@@ -39,7 +85,6 @@ Request Field
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
 |  uxId  |  String  |  uxId   |
-|  uyId  |  String  |  uyId   |
 
 Response Field  
 
@@ -55,54 +100,46 @@ Response Field
 |  remarkName  |  String  |  备注名   |
 |  showName  |  String  |  显示名   |
 
-## 1.2 Uxy Batch Load
+## 1.1.3 Uxy Load As Uxy
 
-URL: /uxy/batchLoad  
+URL: /uxy/loadAsUxy  
 
 RequestBody:  
 ```json
-[
-    {
-        "uxId": "uuid",
-        "uyId": "uuid"
-    },
-    {
-        "uxId": "uuid",
-        "uyId": "uuid"
-    }
-]
+{
+    "userId": "uuid"
+}
 ```
 
 ResponseBody:  
 ```json
-[]
+{
+    "asUx": {},
+    "asUy": {}
+}
 ```
 
 Request Field  
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
-|  uxId  |  String  |  uxId   |
-|  uyId  |  String  |  uyId   |
+|  userId  |  String  |  userId   |
 
 Response Field  
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
-|    |    |     |
+|  asUx  |  UxyShowOutDTO  |  作为Ux   |
+|  asUy  |  UxyShowOutDTO  |  作为Uy   |
 
-## 2.1 Uxy Save
+## 2.1 Uxy Apply Friend
 
-URL: /uxy/save  
+URL: /uxy/applyFriend  
 
 RequestBody:  
 ```json
 {
-    "uyId": "uuid", 
-    "applyFriend": true,
-    "beFriend": true,
-    "remarkName": "asdf",
-    "showName": "asdf"
+    "uyId": "uyid"
 }
 ```
 
@@ -116,10 +153,6 @@ Request Field
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
 |  uyId  |  String  |  uyId   |
-|  applyFriend  |  Boolean  |  申请好友   |
-|  beFriend  |  Boolean  |  成为好友   |
-|  remarkName  |  String  |  备注名   |
-|  showName  |  String  |  显示名   |
 
 Response Field  
 
@@ -127,25 +160,14 @@ Response Field
 | :--------------: | :--------:| :------: |
 |    |    |     |
 
-## 2.2 Uxy Batch Get
+## 2.2 Uxy Batch Get New Friend
 
-URL: /uxy/batchGet  
-
-RequestBody:  
-```json
-{}
-```
+URL: /uxy/batchGetNewFriend  
 
 ResponseBody:  
 ```json
 []
 ```
-
-Request Field  
-
-| 字段     |     类型 |   描述   | 
-| :--------------: | :--------:| :------: |
-|    |    |     |
 
 Response Field  
 
