@@ -2,7 +2,6 @@
 
 * [1.1.1 Uxy Load As Ux By Uy](##-1.1.1-Uxy-Load-As-Ux-By-Uy)
 * [1.1.2 Uxy Load As Uy By Ux](##-1.1.2-Uxy-Load-As-Uy-By-Ux)
-* [1.1.3 Uxy Load As Uxy](##-1.1.3-Uxy-Load-As-Uxy)
 * [2.1 Uxy Apply Friend](##-2.1-Uxy-Apply-Friend)
 * [2.2 Uxy Batch Get New Friend](##-2.2-Uxy-Batch-Get-New-Friend)
 
@@ -100,37 +99,6 @@ Response Field
 |  remarkName  |  String  |  备注名   |
 |  showName  |  String  |  显示名   |
 
-## 1.1.3 Uxy Load As Uxy
-
-URL: /uxy/loadAsUxy  
-
-RequestBody:  
-```json
-{
-    "userId": "uuid"
-}
-```
-
-ResponseBody:  
-```json
-{
-    "asUx": {},
-    "asUy": {}
-}
-```
-
-Request Field  
-
-| 字段     |     类型 |   描述   | 
-| :--------------: | :--------:| :------: |
-|  userId  |  String  |  userId   |
-
-Response Field  
-
-| 字段     |     类型 |   描述   | 
-| :--------------: | :--------:| :------: |
-|  asUx  |  UxyShowOutDTO  |  作为Ux   |
-|  asUy  |  UxyShowOutDTO  |  作为Uy   |
 
 ## 2.1 Uxy Apply Friend
 
