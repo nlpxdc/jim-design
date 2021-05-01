@@ -28,7 +28,10 @@ RequestBody:
 ResponseBody:  
 ```json
 {
-    "userId": "uuid"
+    "userId": "uuid",
+    "tokenIssueTime": 1590413448979,
+    "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTI5NjIyODQzIiwiaG90ZmFjZUlkIjozMzU5ODQ2NTU3NjI3ODg0NzM0LCJjbGllbnRTaWduYXR1cmUiOiJjYWJiMDJlYTFiZGI2ZGYwODI4NDY1MzJkZGY0ZTJjOWUwNmZlODViYmU4ZjRhODFmZGNmNDkyM2E4YzdhNzMwIiwiaXNzIjoid2F3YSIsInVzZXJUeXBlIjowLCJ0eXBlIjoiQWNjZXNzIiwiZXhwIjoxNTkwNDk5ODQ4LCJpYXQiOjE1OTA0MTM0NDgsInVzZXJJZCI6MTEyOTYyMjg0M30.95siySWk7lWvYnM8ubl9GrXTlwxht0QyQo6bV9WWWn4",
+    "accessExpireTime": 1590499848979
 }
 ```
 
@@ -44,6 +47,9 @@ Response Field
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
 |  userId  | Long   | 用户Id    |
+|  tokenIssueTime  | Long   | token签发时间    |
+|  accessToken  | String   | Access Token    |
+|  accessExpireTime  | Long   | Access Token 过期时间    |
 
 ## 0.2 UserLogin Login By Username
 
@@ -191,12 +197,8 @@ URL: /userBase/batchLoad
 RequestBody:  
 ```json
 [
-    {
-        "userId": "uuid"
-    },
-    {
-        "userId": "uuid"
-    }
+    "uuid",
+    "uuid"
 ]
 ```
 
@@ -258,6 +260,12 @@ ResponseBody:
 ```
 
 Request Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  username  |  String  |  用户名   |
+
+Response Field  
 
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
