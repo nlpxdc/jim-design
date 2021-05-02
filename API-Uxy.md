@@ -150,7 +150,7 @@ URL: /uxy/agreeFriend
 RequestBody:  
 ```json
 {
-    "uxId": "uxid"
+    "userId": "uuid"
 }
 ```
 
