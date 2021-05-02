@@ -142,3 +142,20 @@ Response Field
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
 |    |    |     |
+
+## 2.3 Uxy Agree Friend
+
+URL: /uxy/agreeFriend  
+
+RequestBody:  
+```json
+{
+    "uxId": "uxid"
+}
+```
+
+Request Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|  uxId  |  String  |  uxId   |
