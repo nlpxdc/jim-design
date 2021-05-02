@@ -4,6 +4,8 @@
 * [1.1.2 Uxy Load As Uy By Ux](##-1.1.2-Uxy-Load-As-Uy-By-Ux)
 * [2.1 Uxy Apply Friend](##-2.1-Uxy-Apply-Friend)
 * [2.2 Uxy Batch Get New Friend](##-2.2-Uxy-Batch-Get-New-Friend)
+* [2.3 Uxy Agree Friend](##-2.3-Uxy-Agree-Friend)
+* [2.4 Uxy Batch Get Friend](##-2.4-Uxy-Batch-Get-Friend)
 
 # Content
 
@@ -159,3 +161,18 @@ Request Field
 | 字段     |     类型 |   描述   | 
 | :--------------: | :--------:| :------: |
 |  uxId  |  String  |  uxId   |
+
+## 2.4 Uxy Batch Get Friend
+
+URL: /uxy/batchGetFriend  
+
+ResponseBody:  
+```json
+[]
+```
+
+Response Field  
+
+| 字段     |     类型 |   描述   | 
+| :--------------: | :--------:| :------: |
+|    |    |     |
