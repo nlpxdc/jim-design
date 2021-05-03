@@ -5,7 +5,13 @@
 | conversationId  | String  | 非空，Hash索引  | 对话Id  |
 | sendTime  | Long  | 非空，Sort索引  | 发送时间  |
 | sendUserId  | String  | 非空  | 发送者用户Id  |
-| content  | Media  | 非空  | 内容  |
+| mediaType  | Integer  | 非空  | 媒体类型（1文本，2图片，3音频，4视频）  |
+| text  | String  |   | 文本  |
+| thumbUrl  | String  |   | 缩略图  |
+| originUrl  | String  |   | 源文件  |
+| width  | Integer  |   | 宽度  |
+| height  | Integer  |   | 高度  |
+| duration  | Long  |   | 时长（毫秒）  |
 
 # Conversation
 | 字段  | 类型  | 约束  |  说明 |
